@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import PerfumeCard from './PerfumeCard';
+import Recommended from './Recommended';
+
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Pagination, Navigation } from 'swiper/modules';
+
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import PerfumeCard from './PerfumeCard';
 
 
 const MainProducts = () => {
@@ -37,10 +40,11 @@ const MainProducts = () => {
 
           ))
         }
+
       </div>
 
 
-        <div className='py-16'>
+        {/* <div className='py-16'>
           <h2 className='text-lg font-semibold mb-6'>Recommended For You</h2>
           <Swiper
             slidesPerView={1}
@@ -74,13 +78,12 @@ const MainProducts = () => {
               ))
             }
           </Swiper>
-
-        </div>
+        </div> */}
 
             {/* <p>        // "description" : "the invention of this water is most probably related to the Black Death epidemic that ravaged Europe between 1346 and 1350 caused by a bacterial infection. This could potentially be due to the antibacterial effects found in the wine or brandy and rosemary that was used to make the water.",</p> */}
      
 
-
+    <Recommended />
     </div>
   )
 }
